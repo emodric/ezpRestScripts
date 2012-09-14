@@ -1,7 +1,7 @@
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <RoleAssignInput>
   <Role href="/user/roles/3" media-type="application/vnd.ez.api.Role+xml"/>
-  <limitation identifier="Section" media-type="application/vnd.ez.api.limitation+xml">
+  <limitation identifier="Section">
       <values>
           <ref href="1" />
           <ref href="4" />

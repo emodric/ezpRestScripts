@@ -1,12 +1,12 @@
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <PolicyUpdate>
   <limitations>
-    <limitation identifier="Class" media-type="application/vnd.ez.api.limitation">
+    <limitation identifier="Class">
       <values>
         <ref href="13"/>
       </values>
     </limitation>
-    <limitation identifier="ParentClass" media-type="application/vnd.ez.api.limitation">
+    <limitation identifier="ParentClass">
       <values>
         <ref href="12"/>
       </values>
