@@ -12,6 +12,8 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
   <Section href="/content/sections/4" />
   <alwaysAvailable>true</alwaysAvailable>
   <remoteId>remoteId12345678</remoteId>
+  <User href="/user/users/10" />
+  <modificationDate>2012-09-30T12:30:00</modificationDate>
   <fields>
     <field>
       <fieldDefinitionIdentifier>subject</fieldDefinitionIdentifier>
