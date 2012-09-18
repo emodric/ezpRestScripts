@@ -1,6 +1,6 @@
 echo '<?xml version="1.0" encoding="UTF-8"?>
-<ContentObjectStates media-type="application/vnd.ez.api.ContentObjectStates+xml">
- <ObjectState media-type="application/vnd.ez.api.ObjectState+xml" href="/content/objectstategroups/2/objectstates/2"/>
+<ContentObjectStates>
+ <ObjectState href="/content/objectstategroups/2/objectstates/2"/>
 </ContentObjectStates>' | \
 http -v POST localhost:8042/content/objects/58/objectstates \
 'X-Test-User:14' \
