@@ -2,6 +2,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
 <LocationUpdate>
   <priority>3</priority>
   <remoteId>remoteId-qwert999</remoteId>
+  <hidden>true</hidden>
   <sortField>CLASS_NAME</sortField>
   <sortOrder>DESC</sortOrder>
 </LocationUpdate>' | \
