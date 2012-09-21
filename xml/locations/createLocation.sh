@@ -1,5 +1,5 @@
 echo '<?xml version="1.0" encoding="UTF-8"?>
-<LocationCreate media-type="application/vnd.ez.api.LocationCreate+xml">
+<LocationCreate>
     <ParentLocation href="/content/locations/1/5" media-type="application/vnd.ez.api.Location+xml"/>
     <priority>2</priority>
     <hidden>true</hidden>
