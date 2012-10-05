@@ -26,7 +26,7 @@ echo '{
     "defaultValue": "New test"
   }
 }' | \
-http -v POST localhost:8042/content/types/1/draft/fieldDefinitions/4 \
+http -v POST ezpublish5.local/api/ezp/v2/content/types/1/draft/fieldDefinitions/4 \
 'X-Test-User:14' \
 'Accept:application/vnd.ez.api.FieldDefinition+json' \
 'Content-Type:application/vnd.ez.api.FieldDefinitionUpdate+json' \

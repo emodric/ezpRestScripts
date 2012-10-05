@@ -1,2 +1,2 @@
-http -v DELETE localhost:8042/content/objectstategroups/2 \
+http -v DELETE ezpublish5.local/api/ezp/v2/content/objectstategroups/2 \
 'X-Test-User:14' \

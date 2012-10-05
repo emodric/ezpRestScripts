@@ -13,7 +13,7 @@ echo '{
     }
   }
 }' | \
-http -v POST localhost:8042/content/objects/41/versions/2 \
+http -v POST ezpublish5.local/api/ezp/v2/content/objects/41/versions/2 \
 'X-Test-User:14' \
 'Accept:application/vnd.ez.api.Version+json' \
 'Content-Type:application/vnd.ez.api.VersionUpdate+json' \

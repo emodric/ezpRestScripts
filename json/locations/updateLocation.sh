@@ -7,7 +7,7 @@ echo '{
     "sortOrder": "DESC"
   }
 }' | \
-http -v POST localhost:8042/content/locations/1/2 \
+http -v POST ezpublish5.local/api/ezp/v2/content/locations/1/2 \
 'X-Test-User:14' \
 'Accept:application/vnd.ez.api.Location+json' \
 'Content-Type:application/vnd.ez.api.LocationUpdate+json' \

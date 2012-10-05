@@ -31,7 +31,7 @@ echo '{
     }
   }
 }' | \
-http -v POST localhost:8042/content/types/1 \
+http -v POST ezpublish5.local/api/ezp/v2/content/types/1 \
 'X-Test-User:14' \
 'Accept:application/vnd.ez.api.ContentTypeInfo+json' \
 'Content-Type:application/vnd.ez.api.ContentTypeUpdate+json'

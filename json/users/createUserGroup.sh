@@ -21,7 +21,7 @@ echo '{
     }
   }
 }' | \
-http -v POST localhost:8042/user/groups/1/5/subgroups \
+http -v POST ezpublish5.local/api/ezp/v2/user/groups/1/5/subgroups \
 'X-Test-User:14' \
 'Accept:application/vnd.ez.api.UserGroup+json' \
 'Content-Type:application/vnd.ez.api.UserGroupCreate+json'

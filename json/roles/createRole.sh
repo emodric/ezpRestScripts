@@ -20,7 +20,7 @@ echo '{
     }
   }
 }' | \
-http -v POST localhost:8042/user/roles \
+http -v POST ezpublish5.local/api/ezp/v2/user/roles \
 'X-Test-User:14' \
 'Accept:application/vnd.ez.api.Role+json' \
 'Content-Type:application/vnd.ez.api.RoleInput+json'

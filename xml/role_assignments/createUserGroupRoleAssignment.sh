@@ -8,7 +8,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
       </values>
   </limitation>
 </RoleAssignInput>' | \
-http -v POST localhost:8042/user/groups/1/5/14/roles \
+http -v POST ezpublish5.local/api/ezp/v2/user/groups/1/5/14/roles \
 'X-Test-User:14' \
 'Accept:application/vnd.ez.api.RoleAssignmentList+xml' \
 'Content-Type:application/vnd.ez.api.RoleAssignInput+xml'

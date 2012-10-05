@@ -1,2 +1,2 @@
-http -v DELETE localhost:8042/content/objects/58/versions/1 \
+http -v DELETE ezpublish5.local/api/ezp/v2/content/objects/58/versions/1 \
 'X-Test-User:14' \

@@ -1,2 +1,2 @@
-http -v DELETE localhost:8042/content/types/1/draft/fieldDefinitions/4 \
+http -v DELETE ezpublish5.local/api/ezp/v2/content/types/1/draft/fieldDefinitions/4 \
 'X-Test-User:14' \

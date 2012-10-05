@@ -1,3 +1,3 @@
-http -v localhost:8042/content/typegroups/2/types \
+http -v ezpublish5.local/api/ezp/v2/content/typegroups/2/types \
 'X-Test-User:14' \
 'Accept:application/vnd.ez.api.ContentTypeInfoList+json' \

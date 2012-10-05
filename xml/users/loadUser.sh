@@ -1,3 +1,3 @@
-http -v localhost:8042/user/users/14 \
+http -v ezpublish5.local/api/ezp/v2/user/users/14 \
 'X-Test-User:14' \
 'Accept:application/vnd.ez.api.User+xml' \

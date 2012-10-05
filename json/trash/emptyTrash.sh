@@ -1,2 +1,2 @@
-http -v DELETE localhost:8042/content/trash \
+http -v DELETE ezpublish5.local/api/ezp/v2/content/trash \
 'X-Test-User:14' \

@@ -9,7 +9,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
     <value languageCode="eng-US">New state group description</value>
   </descriptions>
 </ObjectStateGroupCreate>' | \
-http -v POST localhost:8042/content/objectstategroups \
+http -v POST ezpublish5.local/api/ezp/v2/content/objectstategroups \
 'X-Test-User:14' \
 'Accept:application/vnd.ez.api.ObjectStateGroup+xml' \
 'Content-Type:application/vnd.ez.api.ObjectStateGroupCreate+xml'

@@ -8,7 +8,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
   <modificationDate>2012-09-30T12:30:00</modificationDate>
   <publishDate>2012-09-30T13:30:00</publishDate>
 </ContentUpdate>' | \
-http -v POST localhost:8042/content/objects/58 \
+http -v POST ezpublish5.local/api/ezp/v2/content/objects/58 \
 'X-Test-User:14' \
 'Accept:application/vnd.ez.api.ContentInfo+xml' \
 'Content-Type:application/vnd.ez.api.ContentUpdate+xml' \

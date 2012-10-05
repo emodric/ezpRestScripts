@@ -23,7 +23,7 @@ echo '{
     }
   }
 }' | \
-http -v POST localhost:8042/user/groups/1/5 \
+http -v POST ezpublish5.local/api/ezp/v2/user/groups/1/5 \
 'X-Test-User:14' \
 'Accept:application/vnd.ez.api.UserGroup+json' \
 'Content-Type:application/vnd.ez.api.UserGroupUpdate+json' \

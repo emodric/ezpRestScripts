@@ -28,7 +28,7 @@ echo '{
     }
   }
 }' | \
-http -v POST localhost:8042/user/roles/5/policies \
+http -v POST ezpublish5.local/api/ezp/v2/user/roles/5/policies \
 'X-Test-User:14' \
 'Accept:application/vnd.ez.api.Policy+json' \
 'Content-Type:application/vnd.ez.api.PolicyCreate+json'

@@ -16,7 +16,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
   <isSearchable>true</isSearchable>
   <defaultValue>New test</defaultValue>
 </FieldDefinitionCreate>' | \
-http -v POST localhost:8042/content/types/1/draft/fieldDefinitions \
+http -v POST ezpublish5.local/api/ezp/v2/content/types/1/draft/fieldDefinitions \
 'X-Test-User:14' \
 'Accept:application/vnd.ez.api.FieldDefinition+xml' \
 'Content-Type:application/vnd.ez.api.FieldDefinitionCreate+xml'
