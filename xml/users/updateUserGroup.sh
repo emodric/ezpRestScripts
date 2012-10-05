@@ -19,7 +19,6 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
   </fields>
 </UserGroupUpdate>' | \
 http -v POST ezpublish5.local/api/ezp/v2/user/groups/1/5 \
-'X-Test-User:14' \
 'Accept:application/vnd.ez.api.UserGroup+xml' \
 'Content-Type:application/vnd.ez.api.UserGroupUpdate+xml' \
 'X-HTTP-Method-Override:PATCH'

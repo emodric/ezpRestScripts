@@ -44,6 +44,5 @@ echo '{
   }
 }' | \
 http -v POST ezpublish5.local/api/ezp/v2/content/objects \
-'X-Test-User:14' \
 'Accept:application/vnd.ez.api.Content+json' \
 'Content-Type:application/vnd.ez.api.ContentCreate+json'

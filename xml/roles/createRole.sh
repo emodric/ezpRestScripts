@@ -10,6 +10,5 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
   </descriptions>
 </RoleInput>' | \
 http -v POST ezpublish5.local/api/ezp/v2/user/roles \
-'X-Test-User:14' \
 'Accept:application/vnd.ez.api.Role+xml' \
 'Content-Type:application/vnd.ez.api.RoleInput+xml'

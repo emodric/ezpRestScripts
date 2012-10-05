@@ -20,6 +20,5 @@ echo '{
   }
 }' | \
 http -v POST ezpublish5.local/api/ezp/v2/user/groups/1/5/14/roles \
-'X-Test-User:14' \
 'Accept:application/vnd.ez.api.RoleAssignmentList+json' \
 'Content-Type:application/vnd.ez.api.RoleAssignInput+json'

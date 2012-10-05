@@ -33,6 +33,5 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
   </fields>
 </ContentCreate>' | \
 http -v POST ezpublish5.local/api/ezp/v2/content/objects \
-'X-Test-User:14' \
 'Accept:application/vnd.ez.api.Content+xml' \
 'Content-Type:application/vnd.ez.api.ContentCreate+xml'

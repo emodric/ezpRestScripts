@@ -11,6 +11,5 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
   </descriptions>
 </ObjectStateCreate>' | \
 http -v POST ezpublish5.local/api/ezp/v2/content/objectstategroups/2/objectstates \
-'X-Test-User:14' \
 'Accept:application/vnd.ez.api.ObjectState+xml' \
 'Content-Type:application/vnd.ez.api.ObjectStateCreate+xml'

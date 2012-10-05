@@ -6,6 +6,5 @@ echo '{
   }
 }' | \
 http -v POST ezpublish5.local/api/ezp/v2/content/urlwildcards \
-'X-Test-User:14' \
 'Accept:application/vnd.ez.api.UrlWildcard+json' \
 'Content-Type:application/vnd.ez.api.UrlWildcardCreate+json'

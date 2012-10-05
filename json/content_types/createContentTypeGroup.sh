@@ -8,6 +8,5 @@ echo '{
   }
 }' | \
 http -v POST ezpublish5.local/api/ezp/v2/content/typegroups \
-'X-Test-User:14' \
 'Accept:application/vnd.ez.api.ContentTypeGroup+json' \
 'Content-Type:application/vnd.ez.api.ContentTypeGroupInput+json'

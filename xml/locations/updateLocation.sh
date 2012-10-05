@@ -7,7 +7,6 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
   <sortOrder>DESC</sortOrder>
 </LocationUpdate>' | \
 http -v POST ezpublish5.local/api/ezp/v2/content/locations/1/2 \
-'X-Test-User:14' \
 'Accept:application/vnd.ez.api.Location+xml' \
 'Content-Type:application/vnd.ez.api.LocationUpdate+xml' \
 'X-HTTP-Method-Override:PATCH'

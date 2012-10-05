@@ -55,6 +55,5 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
    </FieldDefinitions>
 </ContentTypeCreate>' | \
 http -v POST ezpublish5.local/api/ezp/v2/content/typegroups/1/types?publish=true \
-'X-Test-User:14' \
 'Accept:application/vnd.ez.api.ContentType+xml' \
 'Content-Type:application/vnd.ez.api.ContentTypeCreate+xml'

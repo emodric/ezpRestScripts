@@ -19,6 +19,5 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
   <User href="/user/users/14" />
 </ContentTypeUpdate>' | \
 http -v POST ezpublish5.local/api/ezp/v2/content/types/1 \
-'X-Test-User:14' \
 'Accept:application/vnd.ez.api.ContentTypeInfo+xml' \
 'Content-Type:application/vnd.ez.api.ContentTypeUpdate+xml'

@@ -8,7 +8,6 @@ echo '{
   }
 }' | \
 http -v POST ezpublish5.local/api/ezp/v2/content/objects/58/objectstates \
-'X-Test-User:14' \
 'Accept:application/vnd.ez.api.ContentObjectStates+json' \
 'Content-Type:application/vnd.ez.api.ContentObjectStates+json' \
 'X-HTTP-Method-Override:PATCH'

@@ -16,6 +16,5 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
   </limitations>
 </PolicyCreate>' | \
 http -v POST ezpublish5.local/api/ezp/v2/user/roles/5/policies \
-'X-Test-User:14' \
 'Accept:application/vnd.ez.api.Policy+xml' \
 'Content-Type:application/vnd.ez.api.PolicyCreate+xml'

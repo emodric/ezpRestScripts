@@ -14,7 +14,6 @@ echo '{
   }
 }' | \
 http -v POST ezpublish5.local/api/ezp/v2/content/objects/58 \
-'X-Test-User:14' \
 'Accept:application/vnd.ez.api.ContentInfo+json' \
 'Content-Type:application/vnd.ez.api.ContentUpdate+json' \
 'X-HTTP-Method-Override:PATCH'
