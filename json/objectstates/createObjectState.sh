@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '{
   "ObjectStateCreate": {
     "identifier": "new_state",
@@ -21,6 +23,6 @@ echo '{
     }
   }
 }' | \
-http -v POST ezpublish5.local/api/ezp/v2/content/objectstategroups/2/objectstates \
+http --auth $username:$password -v POST $host/api/ezp/v2/content/objectstategroups/2/objectstates \
 'Accept:application/vnd.ez.api.ObjectState+json' \
 'Content-Type:application/vnd.ez.api.ObjectStateCreate+json'

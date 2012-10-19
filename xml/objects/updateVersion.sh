@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <VersionUpdate>
   <initialLanguageCode>eng-GB</initialLanguageCode>
@@ -10,7 +12,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
     </field>
   </fields>
 </VersionUpdate>' | \
-http -v POST ezpublish5.local/api/ezp/v2/content/objects/41/versions/2 \
+http --auth $username:$password -v POST $host/api/ezp/v2/content/objects/41/versions/2 \
 'Accept:application/vnd.ez.api.Version+xml' \
 'Content-Type:application/vnd.ez.api.VersionUpdate+xml' \
 'X-HTTP-Method-Override:PATCH'

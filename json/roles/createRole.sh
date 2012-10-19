@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '{
   "RoleInput": {
     "identifier": "new_role",
@@ -20,6 +22,6 @@ echo '{
     }
   }
 }' | \
-http -v POST ezpublish5.local/api/ezp/v2/user/roles \
+http --auth $username:$password -v POST $host/api/ezp/v2/user/roles \
 'Accept:application/vnd.ez.api.Role+json' \
 'Content-Type:application/vnd.ez.api.RoleInput+json'

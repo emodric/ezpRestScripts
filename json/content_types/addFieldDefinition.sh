@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '{
   "FieldDefinitionCreate": {
     "identifier": "test_def",
@@ -27,6 +29,6 @@ echo '{
     "defaultValue": "New test"
   }
 }' | \
-http -v POST ezpublish5.local/api/ezp/v2/content/types/1/draft/fieldDefinitions \
+http --auth $username:$password -v POST $host/api/ezp/v2/content/types/1/draft/fieldDefinitions \
 'Accept:application/vnd.ez.api.FieldDefinition+json' \
 'Content-Type:application/vnd.ez.api.FieldDefinitionCreate+json'

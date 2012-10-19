@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '{
   "PolicyCreate": {
     "module": "content",
@@ -28,6 +30,6 @@ echo '{
     }
   }
 }' | \
-http -v POST ezpublish5.local/api/ezp/v2/user/roles/5/policies \
+http --auth $username:$password -v POST $host/api/ezp/v2/user/roles/5/policies \
 'Accept:application/vnd.ez.api.Policy+json' \
 'Content-Type:application/vnd.ez.api.PolicyCreate+json'

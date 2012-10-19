@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '{
   "ContentUpdate": {
     "mainLanguageCode": "eng-GB",
@@ -13,7 +15,7 @@ echo '{
     "publishDate": "2012-09-30T13:30:00"
   }
 }' | \
-http -v POST ezpublish5.local/api/ezp/v2/content/objects/58 \
+http --auth $username:$password -v POST $host/api/ezp/v2/content/objects/58 \
 'Accept:application/vnd.ez.api.ContentInfo+json' \
 'Content-Type:application/vnd.ez.api.ContentUpdate+json' \
 'X-HTTP-Method-Override:PATCH'

@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <ObjectStateUpdate>
   <identifier>updated_state</identifier>
@@ -9,7 +11,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
     <value languageCode="eng-US">Updated state description</value>
   </descriptions>
 </ObjectStateUpdate>' | \
-http -v POST ezpublish5.local/api/ezp/v2/content/objectstategroups/2/objectstates/2 \
+http --auth $username:$password -v POST $host/api/ezp/v2/content/objectstategroups/2/objectstates/2 \
 'Accept:application/vnd.ez.api.ObjectState+xml' \
 'Content-Type:application/vnd.ez.api.ObjectStateUpdate+xml' \
 'X-HTTP-Method-Override:PATCH'

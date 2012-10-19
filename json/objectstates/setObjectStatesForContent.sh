@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '{
   "ContentObjectStates": {
     "ObjectState": [
@@ -7,7 +9,7 @@ echo '{
     ]
   }
 }' | \
-http -v POST ezpublish5.local/api/ezp/v2/content/objects/58/objectstates \
+http --auth $username:$password -v POST $host/api/ezp/v2/content/objects/58/objectstates \
 'Accept:application/vnd.ez.api.ContentObjectStates+json' \
 'Content-Type:application/vnd.ez.api.ContentObjectStates+json' \
 'X-HTTP-Method-Override:PATCH'

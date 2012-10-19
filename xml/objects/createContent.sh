@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <ContentCreate>
   <ContentType href="/content/types/13" />
@@ -32,6 +34,6 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
     </field>
   </fields>
 </ContentCreate>' | \
-http -v POST ezpublish5.local/api/ezp/v2/content/objects \
+http --auth $username:$password -v POST $host/api/ezp/v2/content/objects \
 'Accept:application/vnd.ez.api.Content+xml' \
 'Content-Type:application/vnd.ez.api.ContentCreate+xml'

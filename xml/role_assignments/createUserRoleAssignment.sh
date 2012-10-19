@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <RoleAssignInput>
   <Role href="/user/roles/3" media-type="application/vnd.ez.api.Role+xml"/>
@@ -8,6 +10,6 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
       </values>
   </limitation>
 </RoleAssignInput>' | \
-http -v POST ezpublish5.local/api/ezp/v2/user/users/10/roles \
+http --auth $username:$password -v POST $host/api/ezp/v2/user/users/10/roles \
 'Accept:application/vnd.ez.api.RoleAssignmentList+xml' \
 'Content-Type:application/vnd.ez.api.RoleAssignInput+xml'

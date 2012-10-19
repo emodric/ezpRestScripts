@@ -1,1 +1,3 @@
-http -v DELETE ezpublish5.local/api/ezp/v2/content/objectstategroups/2 \
+source ../../rest.cfg
+
+http --auth $username:$password -v DELETE $host/api/ezp/v2/content/objectstategroups/2 \

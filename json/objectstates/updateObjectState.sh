@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '{
   "ObjectStateUpdate": {
     "identifier": "updated_state",
@@ -20,7 +22,7 @@ echo '{
     }
   }
 }' | \
-http -v POST ezpublish5.local/api/ezp/v2/content/objectstategroups/2/objectstates/2 \
+http --auth $username:$password -v POST $host/api/ezp/v2/content/objectstategroups/2/objectstates/2 \
 'Accept:application/vnd.ez.api.ObjectState+json' \
 'Content-Type:application/vnd.ez.api.ObjectStateUpdate+json' \
 'X-HTTP-Method-Override:PATCH'

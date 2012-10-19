@@ -1,1 +1,3 @@
-http -v DELETE ezpublish5.local/api/ezp/v2/user/groups/1/5/14 \
+source ../../rest.cfg
+
+http --auth $username:$password -v DELETE $host/api/ezp/v2/user/groups/1/5/14 \

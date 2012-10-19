@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '{
   "UserUpdate": {
     "mainLanguageCode": "eng-GB",
@@ -26,7 +28,7 @@ echo '{
     "enabled": "false"
   }
 }' | \
-http -v POST ezpublish5.local/api/ezp/v2/user/users/10 \
+http --auth $username:$password -v POST $host/api/ezp/v2/user/users/10 \
 'Accept:application/vnd.ez.api.User+json' \
 'Content-Type:application/vnd.ez.api.UserUpdate+json' \
 'X-HTTP-Method-Override:PATCH'

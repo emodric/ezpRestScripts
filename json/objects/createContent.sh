@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '{
   "ContentCreate": {
     "ContentType": {
@@ -43,6 +45,6 @@ echo '{
     }
   }
 }' | \
-http -v POST ezpublish5.local/api/ezp/v2/content/objects \
+http --auth $username:$password -v POST $host/api/ezp/v2/content/objects \
 'Accept:application/vnd.ez.api.Content+json' \
 'Content-Type:application/vnd.ez.api.ContentCreate+json'

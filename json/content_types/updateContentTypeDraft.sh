@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '{
   "ContentTypeUpdate": {
     "identifier": "updatedContentType",
@@ -31,7 +33,7 @@ echo '{
     }
   }
 }' | \
-http -v POST ezpublish5.local/api/ezp/v2/content/types/1/draft \
+http --auth $username:$password -v POST $host/api/ezp/v2/content/types/1/draft \
 'Accept:application/vnd.ez.api.ContentTypeInfo+json' \
 'Content-Type:application/vnd.ez.api.ContentTypeUpdate+json' \
 'X-HTTP-Method-Override:PATCH'

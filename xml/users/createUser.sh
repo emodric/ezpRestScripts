@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <UserCreate>
   <mainLanguageCode>eng-US</mainLanguageCode>
@@ -20,6 +22,6 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
     </field>
   </fields>
 </UserCreate>' | \
-http -v POST ezpublish5.local/api/ezp/v2/user/groups/1/5/13/users \
+http --auth $username:$password -v POST $host/api/ezp/v2/user/groups/1/5/13/users \
 'Accept:application/vnd.ez.api.User+xml' \
 'Content-Type:application/vnd.ez.api.UserCreate+xml'

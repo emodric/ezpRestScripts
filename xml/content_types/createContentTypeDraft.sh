@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <ContentTypeUpdate>
   <identifier>updatedContentType</identifier>
@@ -18,6 +20,6 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
   <modificationDate>2012-12-31T12:30:00</modificationDate>
   <User href="/user/users/14" />
 </ContentTypeUpdate>' | \
-http -v POST ezpublish5.local/api/ezp/v2/content/types/1 \
+http --auth $username:$password -v POST $host/api/ezp/v2/content/types/1 \
 'Accept:application/vnd.ez.api.ContentTypeInfo+xml' \
 'Content-Type:application/vnd.ez.api.ContentTypeUpdate+xml'

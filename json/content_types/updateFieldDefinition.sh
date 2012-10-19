@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '{
   "FieldDefinitionUpdate": {
     "identifier": "updated_name",
@@ -26,7 +28,7 @@ echo '{
     "defaultValue": "New test"
   }
 }' | \
-http -v POST ezpublish5.local/api/ezp/v2/content/types/1/draft/fieldDefinitions/4 \
+http --auth $username:$password -v POST $host/api/ezp/v2/content/types/1/draft/fieldDefinitions/4 \
 'Accept:application/vnd.ez.api.FieldDefinition+json' \
 'Content-Type:application/vnd.ez.api.FieldDefinitionUpdate+json' \
 'X-HTTP-Method-Override:PATCH'

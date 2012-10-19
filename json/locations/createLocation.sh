@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '{
   "LocationCreate": {
     "ParentLocation": {
@@ -11,6 +13,6 @@ echo '{
     "sortOrder": "ASC"
   }
 }' | \
-http -v POST ezpublish5.local/api/ezp/v2/content/objects/58/locations \
+http --auth $username:$password -v POST $host/api/ezp/v2/content/objects/58/locations \
 'Accept:application/vnd.ez.api.Location+json' \
 'Content-Type:application/vnd.ez.api.LocationCreate+json'

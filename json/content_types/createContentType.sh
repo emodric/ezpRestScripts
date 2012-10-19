@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '{
   "ContentTypeCreate": {
     "identifier": "newContentType",
@@ -88,6 +90,6 @@ echo '{
     }
   }
 }' | \
-http -v POST ezpublish5.local/api/ezp/v2/content/typegroups/1/types \
+http --auth $username:$password -v POST $host/api/ezp/v2/content/typegroups/1/types \
 'Accept:application/vnd.ez.api.ContentType+json' \
 'Content-Type:application/vnd.ez.api.ContentTypeCreate+json'

@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <ObjectStateCreate>
   <identifier>new_state</identifier>
@@ -10,6 +12,6 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
     <value languageCode="eng-US">New state description</value>
   </descriptions>
 </ObjectStateCreate>' | \
-http -v POST ezpublish5.local/api/ezp/v2/content/objectstategroups/2/objectstates \
+http --auth $username:$password -v POST $host/api/ezp/v2/content/objectstategroups/2/objectstates \
 'Accept:application/vnd.ez.api.ObjectState+xml' \
 'Content-Type:application/vnd.ez.api.ObjectStateCreate+xml'

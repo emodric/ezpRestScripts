@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <PolicyCreate>
   <module>content</module>
@@ -15,6 +17,6 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
     </limitation>
   </limitations>
 </PolicyCreate>' | \
-http -v POST ezpublish5.local/api/ezp/v2/user/roles/5/policies \
+http --auth $username:$password -v POST $host/api/ezp/v2/user/roles/5/policies \
 'Accept:application/vnd.ez.api.Policy+xml' \
 'Content-Type:application/vnd.ez.api.PolicyCreate+xml'

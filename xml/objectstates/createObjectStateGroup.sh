@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <ObjectStateGroupCreate>
   <identifier>new_state_group</identifier>
@@ -9,6 +11,6 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
     <value languageCode="eng-US">New state group description</value>
   </descriptions>
 </ObjectStateGroupCreate>' | \
-http -v POST ezpublish5.local/api/ezp/v2/content/objectstategroups \
+http --auth $username:$password -v POST $host/api/ezp/v2/content/objectstategroups \
 'Accept:application/vnd.ez.api.ObjectStateGroup+xml' \
 'Content-Type:application/vnd.ez.api.ObjectStateGroupCreate+xml'

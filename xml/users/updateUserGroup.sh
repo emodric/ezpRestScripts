@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <UserGroupUpdate>
   <mainLanguageCode>eng-GB</mainLanguageCode>
@@ -18,7 +20,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
     </field>
   </fields>
 </UserGroupUpdate>' | \
-http -v POST ezpublish5.local/api/ezp/v2/user/groups/1/5 \
+http --auth $username:$password -v POST $host/api/ezp/v2/user/groups/1/5 \
 'Accept:application/vnd.ez.api.UserGroup+xml' \
 'Content-Type:application/vnd.ez.api.UserGroupUpdate+xml' \
 'X-HTTP-Method-Override:PATCH'

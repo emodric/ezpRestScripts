@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <PolicyUpdate>
   <limitations>
@@ -13,7 +15,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
     </limitation>
   </limitations>
 </PolicyUpdate>' | \
-http -v POST ezpublish5.local/api/ezp/v2/user/roles/5/policies/377 \
+http --auth $username:$password -v POST $host/api/ezp/v2/user/roles/5/policies/377 \
 'Accept:application/vnd.ez.api.Policy+xml' \
 'Content-Type:application/vnd.ez.api.PolicyUpdate+xml' \
 'X-HTTP-Method-Override:PATCH'

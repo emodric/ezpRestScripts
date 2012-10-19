@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '{
   "RoleAssignInput": {
     "Role": {
@@ -19,6 +21,6 @@ echo '{
     }
   }
 }' | \
-http -v POST ezpublish5.local/api/ezp/v2/user/users/10/roles \
+http --auth $username:$password -v POST $host/api/ezp/v2/user/users/10/roles \
 'Accept:application/vnd.ez.api.RoleAssignmentList+json' \
 'Content-Type:application/vnd.ez.api.RoleAssignInput+json'

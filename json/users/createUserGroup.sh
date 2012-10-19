@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '{
   "UserGroupCreate": {
     "mainLanguageCode": "eng-US",
@@ -21,6 +23,6 @@ echo '{
     }
   }
 }' | \
-http -v POST ezpublish5.local/api/ezp/v2/user/groups/1/5/subgroups \
+http --auth $username:$password -v POST $host/api/ezp/v2/user/groups/1/5/subgroups \
 'Accept:application/vnd.ez.api.UserGroup+json' \
 'Content-Type:application/vnd.ez.api.UserGroupCreate+json'

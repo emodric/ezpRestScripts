@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '{
   "PolicyUpdate": {
     "limitations": {
@@ -26,7 +28,7 @@ echo '{
     }
   }
 }' | \
-http -v POST ezpublish5.local/api/ezp/v2/user/roles/5/policies/377 \
+http --auth $username:$password -v POST $host/api/ezp/v2/user/roles/5/policies/377 \
 'Accept:application/vnd.ez.api.Policy+json' \
 'Content-Type:application/vnd.ez.api.PolicyUpdate+json' \
 'X-HTTP-Method-Override:PATCH'

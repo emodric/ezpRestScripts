@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '{
   "UserCreate": {
     "mainLanguageCode": "eng-US",
@@ -25,6 +27,6 @@ echo '{
     }
   }
 }' | \
-http -v POST ezpublish5.local/api/ezp/v2/user/groups/1/5/13/users \
+http --auth $username:$password -v POST $host/api/ezp/v2/user/groups/1/5/13/users \
 'Accept:application/vnd.ez.api.User+json' \
 'Content-Type:application/vnd.ez.api.UserCreate+json'

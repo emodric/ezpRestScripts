@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <UserGroupCreate>
   <mainLanguageCode>eng-US</mainLanguageCode>
@@ -16,6 +18,6 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
     </field>
   </fields>
 </UserGroupCreate>' | \
-http -v POST ezpublish5.local/api/ezp/v2/user/groups/1/5/subgroups \
+http --auth $username:$password -v POST $host/api/ezp/v2/user/groups/1/5/subgroups \
 'Accept:application/vnd.ez.api.UserGroup+xml' \
 'Content-Type:application/vnd.ez.api.UserGroupCreate+xml'

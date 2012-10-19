@@ -1,3 +1,5 @@
+source ../../rest.cfg
+
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <UserUpdate>
   <mainLanguageCode>eng-GB</mainLanguageCode>
@@ -21,7 +23,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
   <password>updatedPassword</password>
   <enabled>false</enabled>
 </UserUpdate>' | \
-http -v POST ezpublish5.local/api/ezp/v2/user/users/10 \
+http --auth $username:$password -v POST $host/api/ezp/v2/user/users/10 \
 'Accept:application/vnd.ez.api.User+xml' \
 'Content-Type:application/vnd.ez.api.UserUpdate+xml' \
 'X-HTTP-Method-Override:PATCH'
