@@ -1,4 +1,4 @@
 source ../../rest.cfg
 
 http --auth $username:$password -v $host/api/ezp/v2/content/types/1/draft/fieldDefinitions \
-'Accept:application/vnd.ez.api.FieldDefinitionList+json' \
+'Accept:application/vnd.ez.api.FieldDefinitionList+json'
