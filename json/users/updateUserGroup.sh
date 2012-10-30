@@ -12,13 +12,13 @@ echo '{
         {
           "id": "1234",
           "fieldDefinitionIdentifier": "name",
-          "languageCode": "eng-US",
+          "languageCode": "eng-GB",
           "fieldValue": "New group name"
         },
         {
           "id": "1234",
           "fieldDefinitionIdentifier": "description",
-          "languageCode": "eng-US",
+          "languageCode": "eng-GB",
           "fieldValue": "New group description"
         }
       ]

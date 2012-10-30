@@ -3,11 +3,11 @@ source ../../rest.cfg
 echo '{
   "ObjectStateGroupCreate": {
     "identifier": "new_state_group",
-    "defaultLanguageCode": "eng-US",
+    "defaultLanguageCode": "eng-GB",
     "names": {
       "value": [
         {
-          "_languageCode": "eng-US",
+          "_languageCode": "eng-GB",
           "#text": "New state group"
         }
       ]
@@ -15,7 +15,7 @@ echo '{
     "descriptions": {
       "value": [
         {
-          "_languageCode": "eng-US",
+          "_languageCode": "eng-GB",
           "#text": "New state group description"
         }
       ]

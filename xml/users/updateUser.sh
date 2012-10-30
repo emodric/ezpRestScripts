@@ -9,13 +9,13 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
     <field>
       <id>1234</id>
       <fieldDefinitionIdentifier>first_name</fieldDefinitionIdentifier>
-      <languageCode>eng-US</languageCode>
+      <languageCode>eng-GB</languageCode>
       <fieldValue>Updated first name</fieldValue>
     </field>
     <field>
       <id>1234</id>
       <fieldDefinitionIdentifier>last_name</fieldDefinitionIdentifier>
-      <languageCode>eng-US</languageCode>
+      <languageCode>eng-GB</languageCode>
       <fieldValue>Updated last name</fieldValue>
     </field>
   </fields>

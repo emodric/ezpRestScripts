@@ -12,13 +12,13 @@ echo '{
         {
           "id": "1234",
           "fieldDefinitionIdentifier": "first_name",
-          "languageCode": "eng-US",
+          "languageCode": "eng-GB",
           "fieldValue": "Updated first name"
         },
         {
           "id": "1234",
           "fieldDefinitionIdentifier": "last_name",
-          "languageCode": "eng-US",
+          "languageCode": "eng-GB",
           "fieldValue": "Updated last name"
         }
       ]

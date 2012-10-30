@@ -3,12 +3,12 @@ source ../../rest.cfg
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <RoleInput>
   <identifier>updated_role</identifier>
-  <mainLanguageCode>eng-US</mainLanguageCode>
+  <mainLanguageCode>eng-GB</mainLanguageCode>
   <names>
-    <value languageCode="eng-US">Updated role</value>
+    <value languageCode="eng-GB">Updated role</value>
   </names>
   <descriptions>
-    <value languageCode="eng-US">Updated role description</value>
+    <value languageCode="eng-GB">Updated role description</value>
   </descriptions>
 </RoleInput>' | \
 http --auth $username:$password -v POST $host/api/ezp/v2/user/roles/5 \

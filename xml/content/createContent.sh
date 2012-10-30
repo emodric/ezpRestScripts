@@ -3,7 +3,7 @@ source ../../rest.cfg
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <ContentCreate>
   <ContentType href="/content/types/13" />
-  <mainLanguageCode>eng-US</mainLanguageCode>
+  <mainLanguageCode>eng-GB</mainLanguageCode>
   <LocationCreate>
     <ParentLocation href="/content/locations/1/5" />
     <priority>0</priority>
@@ -19,17 +19,17 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
   <fields>
     <field>
       <fieldDefinitionIdentifier>subject</fieldDefinitionIdentifier>
-      <languageCode>eng-US</languageCode>
+      <languageCode>eng-GB</languageCode>
       <fieldValue>Test comment</fieldValue>
     </field>
     <field>
       <fieldDefinitionIdentifier>author</fieldDefinitionIdentifier>
-      <languageCode>eng-US</languageCode>
+      <languageCode>eng-GB</languageCode>
       <fieldValue>Edi Modric</fieldValue>
     </field>
     <field>
       <fieldDefinitionIdentifier>message</fieldDefinitionIdentifier>
-      <languageCode>eng-US</languageCode>
+      <languageCode>eng-GB</languageCode>
       <fieldValue>This is a comment</fieldValue>
     </field>
   </fields>

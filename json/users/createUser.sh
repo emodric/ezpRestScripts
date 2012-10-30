@@ -2,7 +2,7 @@ source ../../rest.cfg
 
 echo '{
   "UserCreate": {
-    "mainLanguageCode": "eng-US",
+    "mainLanguageCode": "eng-GB",
     "Section": {
       "_href": "/content/sections/1"
     },
@@ -15,12 +15,12 @@ echo '{
       "field": [
         {
           "fieldDefinitionIdentifier": "first_name",
-          "languageCode": "eng-US",
+          "languageCode": "eng-GB",
           "fieldValue": "Edi"
         },
         {
           "fieldDefinitionIdentifier": "last_name",
-          "languageCode": "eng-US",
+          "languageCode": "eng-GB",
           "fieldValue": "Modric"
         }
       ]

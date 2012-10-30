@@ -2,7 +2,7 @@ source ../../rest.cfg
 
 echo '{
   "UserGroupCreate": {
-    "mainLanguageCode": "eng-US",
+    "mainLanguageCode": "eng-GB",
     "Section": {
       "_href": "/content/sections/1"
     },
@@ -11,12 +11,12 @@ echo '{
       "field": [
         {
           "fieldDefinitionIdentifier": "name",
-          "languageCode": "eng-US",
+          "languageCode": "eng-GB",
           "fieldValue": "User group name"
         },
         {
           "fieldDefinitionIdentifier": "description",
-          "languageCode": "eng-US",
+          "languageCode": "eng-GB",
           "fieldValue": "User group description"
         }
       ]

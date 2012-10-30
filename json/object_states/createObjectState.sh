@@ -4,11 +4,11 @@ echo '{
   "ObjectStateCreate": {
     "identifier": "new_state",
     "priority": "4",
-    "defaultLanguageCode": "eng-US",
+    "defaultLanguageCode": "eng-GB",
     "names": {
       "value": [
         {
-          "_languageCode": "eng-US",
+          "_languageCode": "eng-GB",
           "#text": "New state"
         }
       ]
@@ -16,7 +16,7 @@ echo '{
     "descriptions": {
       "value": [
         {
-          "_languageCode": "eng-US",
+          "_languageCode": "eng-GB",
           "#text": "New state description"
         }
       ]

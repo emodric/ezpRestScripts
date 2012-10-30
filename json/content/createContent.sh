@@ -5,7 +5,7 @@ echo '{
     "ContentType": {
       "_href": "/content/types/13"
     },
-    "mainLanguageCode": "eng-US",
+    "mainLanguageCode": "eng-GB",
     "LocationCreate": {
       "ParentLocation": {
         "_href": "/content/locations/1/5"
@@ -28,17 +28,17 @@ echo '{
       "field": [
         {
           "fieldDefinitionIdentifier": "subject",
-          "languageCode": "eng-US",
+          "languageCode": "eng-GB",
           "fieldValue": "Test comment"
         },
         {
           "fieldDefinitionIdentifier": "author",
-          "languageCode": "eng-US",
+          "languageCode": "eng-GB",
           "fieldValue": "Edi Modric"
         },
         {
           "fieldDefinitionIdentifier": "message",
-          "languageCode": "eng-US",
+          "languageCode": "eng-GB",
           "fieldValue": "This is a comment"
         }
       ]

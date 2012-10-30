@@ -9,13 +9,13 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
     <field>
       <id>1234</id>
       <fieldDefinitionIdentifier>name</fieldDefinitionIdentifier>
-      <languageCode>eng-US</languageCode>
+      <languageCode>eng-GB</languageCode>
       <fieldValue>New group name</fieldValue>
     </field>
     <field>
       <id>1234</id>
       <fieldDefinitionIdentifier>description</fieldDefinitionIdentifier>
-      <languageCode>eng-US</languageCode>
+      <languageCode>eng-GB</languageCode>
       <fieldValue>New group description</fieldValue>
     </field>
   </fields>

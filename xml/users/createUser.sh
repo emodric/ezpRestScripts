@@ -2,7 +2,7 @@ source ../../rest.cfg
 
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <UserCreate>
-  <mainLanguageCode>eng-US</mainLanguageCode>
+  <mainLanguageCode>eng-GB</mainLanguageCode>
   <Section href="/content/sections/1" />
   <remoteId>remoteId12345678</remoteId>
   <login>edi.modric</login>
@@ -12,12 +12,12 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
   <fields>
     <field>
       <fieldDefinitionIdentifier>first_name</fieldDefinitionIdentifier>
-      <languageCode>eng-US</languageCode>
+      <languageCode>eng-GB</languageCode>
       <fieldValue>Edi</fieldValue>
     </field>
     <field>
       <fieldDefinitionIdentifier>last_name</fieldDefinitionIdentifier>
-      <languageCode>eng-US</languageCode>
+      <languageCode>eng-GB</languageCode>
       <fieldValue>Modric</fieldValue>
     </field>
   </fields>

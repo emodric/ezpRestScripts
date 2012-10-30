@@ -2,18 +2,18 @@ source ../../rest.cfg
 
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <UserGroupCreate>
-  <mainLanguageCode>eng-US</mainLanguageCode>
+  <mainLanguageCode>eng-GB</mainLanguageCode>
   <Section href="/content/sections/1" />
   <remoteId>remoteId12345678</remoteId>
   <fields>
     <field>
       <fieldDefinitionIdentifier>name</fieldDefinitionIdentifier>
-      <languageCode>eng-US</languageCode>
+      <languageCode>eng-GB</languageCode>
       <fieldValue>User group name</fieldValue>
     </field>
     <field>
       <fieldDefinitionIdentifier>description</fieldDefinitionIdentifier>
-      <languageCode>eng-US</languageCode>
+      <languageCode>eng-GB</languageCode>
       <fieldValue>User group description</fieldValue>
     </field>
   </fields>

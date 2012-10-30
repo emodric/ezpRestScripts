@@ -3,11 +3,11 @@ source ../../rest.cfg
 echo '{
   "RoleInput": {
     "identifier": "new_role",
-    "mainLanguageCode": "eng-US",
+    "mainLanguageCode": "eng-GB",
     "names": {
       "value": [
         {
-          "_languageCode": "eng-US",
+          "_languageCode": "eng-GB",
           "#text": "New role"
         }
       ]
@@ -15,7 +15,7 @@ echo '{
     "descriptions": {
       "value": [
         {
-          "_languageCode": "eng-US",
+          "_languageCode": "eng-GB",
           "#text": "New role description"
         }
       ]
