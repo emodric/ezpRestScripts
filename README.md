@@ -10,7 +10,7 @@ To run these scripts, you need two things:
   - Fully installed and configured eZ Publish 5 - [GitHub repository](https://github.com/ezsystems/ezpublish5)
   - HTTPie - a command line HTTP client - [GitHub repository](https://github.com/jkbr/httpie)
 
-Most of these scripts are based on clean install of eZ Publish 5 with eZ Demo package with demo content, however, due to nature of eZ Publish content model, some scripts cannot be ran out of the box. You will need to edit the scripts that fail and adjust the resource URI to match the current situation of your database.
+These scripts are based on clean install of eZ Publish 5 with eZ Demo package with demo content and with eng-GB translation available. Scripts in each folder are ordered in a way that will allow each of them to be executed successfully if executed in that specific order. However, scripts in different folders are completely independent of one another, so before executing scripts in different folders, you should ensure that you have the database in clean install state.
 
 Installation instructions
 -------------------------
