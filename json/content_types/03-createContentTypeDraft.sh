@@ -4,7 +4,6 @@ echo '{
   "ContentTypeUpdate": {
     "identifier": "updatedContentType",
     "mainLanguageCode": "eng-GB",
-    "remoteId": "remoteId-qwert548",
     "urlAliasSchema": "<title>",
     "nameSchema": "<title>",
     "isContainer": "true",

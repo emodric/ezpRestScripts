@@ -1,0 +1,1 @@
+../content/03-createDraftFromCurrentVersion.sh

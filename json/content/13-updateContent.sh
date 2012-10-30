@@ -7,7 +7,7 @@ echo '{
       "_href": "/content/sections/4"
     },
     "alwaysAvailable": "false",
-    "remoteId": "remoteId12345678",
+    "remoteId": "remoteId123456789",
     "Owner": {
       "_href": "/user/users/10"
     },

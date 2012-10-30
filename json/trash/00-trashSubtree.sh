@@ -1,0 +1,1 @@
+../locations/11-trashSubtree.sh

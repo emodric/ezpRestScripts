@@ -5,7 +5,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
   <mainLanguageCode>eng-GB</mainLanguageCode>
   <Section href="/content/sections/4" />
   <alwaysAvailable>false</alwaysAvailable>
-  <remoteId>remoteId12345678</remoteId>
+  <remoteId>remoteId123456789</remoteId>
   <Owner href="/user/users/10" />
   <modificationDate>2012-09-30T12:30:00</modificationDate>
   <publishDate>2012-09-30T13:30:00</publishDate>

@@ -4,7 +4,6 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
 <ContentTypeUpdate>
   <identifier>updatedContentType</identifier>
   <mainLanguageCode>eng-GB</mainLanguageCode>
-  <remoteId>remoteId-qwert548</remoteId>
   <urlAliasSchema>&lt;title&gt;</urlAliasSchema>
   <nameSchema>&lt;title&gt;</nameSchema>
   <isContainer>true</isContainer>
