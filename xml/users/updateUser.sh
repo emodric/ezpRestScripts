@@ -3,7 +3,7 @@ source ../../rest.cfg
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <UserUpdate>
   <mainLanguageCode>eng-GB</mainLanguageCode>
-  <remoteId>remote123456</remoteId>
+  <remoteId>remote1234567</remoteId>
   <Section href="/content/sections/1" />
   <fields>
     <field>

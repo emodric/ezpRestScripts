@@ -4,7 +4,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
 <UserCreate>
   <mainLanguageCode>eng-GB</mainLanguageCode>
   <Section href="/content/sections/1" />
-  <remoteId>remoteId12345678</remoteId>
+  <remoteId>remoteId123456789</remoteId>
   <login>edi.modric</login>
   <email>edi@local.com</email>
   <password>42</password>

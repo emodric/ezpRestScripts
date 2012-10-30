@@ -3,7 +3,7 @@ source ../../rest.cfg
 echo '{
   "UserUpdate": {
     "mainLanguageCode": "eng-GB",
-    "remoteId": "remote123456",
+    "remoteId": "remote1234567",
     "Section": {
       "_href": "/content/sections/1"
     },
