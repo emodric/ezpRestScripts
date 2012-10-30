@@ -15,7 +15,7 @@ echo '{
     }
   }
 }' | \
-http --auth $username:$password -v POST $host/api/ezp/v2/content/objects/41/versions/2 \
+http --auth $username:$password -v POST $host/api/ezp/v2/content/objects/58/versions/2 \
 'Accept:application/vnd.ez.api.Version+json' \
 'Content-Type:application/vnd.ez.api.VersionUpdate+json' \
 'X-HTTP-Method-Override:PATCH'

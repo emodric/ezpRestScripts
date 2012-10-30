@@ -28,7 +28,7 @@ echo '{
     "enabled": "false"
   }
 }' | \
-http --auth $username:$password -v POST $host/api/ezp/v2/user/users/14 \
+http --auth $username:$password -v POST $host/api/ezp/v2/user/users/10 \
 'Accept:application/vnd.ez.api.User+json' \
 'Content-Type:application/vnd.ez.api.UserUpdate+json' \
 'X-HTTP-Method-Override:PATCH'
