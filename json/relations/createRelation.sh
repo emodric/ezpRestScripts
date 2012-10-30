@@ -7,6 +7,6 @@ echo '{
     }
   }
 }' | \
-http --auth $username:$password -v POST $host/api/ezp/v2/content/objects/60/versions/3/relations \
+http --auth $username:$password -v POST $host/api/ezp/v2/content/objects/60/versions/2/relations \
 'Accept:application/vnd.ez.api.Relation+json' \
 'Content-Type:application/vnd.ez.api.RelationCreate+json'
