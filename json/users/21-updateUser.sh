@@ -1,4 +1,4 @@
-source ../../rest.cfg
+source $(dirname "$0")/../../rest.cfg
 
 echo '{
   "UserUpdate": {

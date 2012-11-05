@@ -1,4 +1,4 @@
-source ../../rest.cfg
+source $(dirname "$0")/../../rest.cfg
 
 http --auth $username:$password -v POST $host/api/ezp/v2/user/groups/1/5/13 \
 'Destination:/user/groups/1/5/44' \
